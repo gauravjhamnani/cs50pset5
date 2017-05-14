@@ -1,7 +1,0 @@
-0. board can range for 3*3 to 9*9 both including   . 
-
-1. 2d array is used to represent board.
-
-2. greet() is called to greet player at start of the game.
-
-3. init(),draw(),move(),won() are fuctions to be implemented.
