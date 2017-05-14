@@ -11,11 +11,31 @@
 /**
  * Returns true if value is in array of n values, else false.
  */
-bool search(int value, int values[], int n)
+
+    bool search(int value, int values[], int n)
 {
-    // TODO: implement a searching algorithm
+    int low_index=0;
+    int hi_index=n-1;
+    if(n<0)
+        return false;
+    while(low_index<=hi_index)
+    {
+        int middle=low_index+(hi_index-low_index)/2;
+        if(value==values[middle])
+            return true;
+        if(value>values[middle])
+        {
+            low_index=middle+1;
+        }
+        else 
+        {
+            hi_index=middle-1;
+        }
+        
+    }
     return false;
 }
+
 
 /**
  * Sorts array of n values.
