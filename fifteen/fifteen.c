@@ -29,6 +29,7 @@ int board[DIM_MAX][DIM_MAX];
 
 // dimensions
 int d;
+int random=0;
 //current vaccant positions
 //int vaccantrow;
 //int vaccantcoloumn;
@@ -160,9 +161,10 @@ void greet(void)
  * Initializes the game's board with tiles numbered 1 through d*d - 1
  * (i.e., fills 2D array with values but does not actually print them).  
  */
-void init(void)
+void init(void) // added comment
 {
     // TODO
+    
     int max=d*d-1;
     int i,j;
     for(i=0;i<d;i++)
@@ -202,6 +204,7 @@ void init(void)
 void draw(void)
 {
     // TODO
+    random++;
     for(int i=0;i<d;i++)
     {
         for(int j=0;j<d;j++)
